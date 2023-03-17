@@ -10,7 +10,7 @@ int main(void)
 	{
 		putchar((char)i);
 	}
-	putchat(\n);
+	putchar(\n);
 	return (0);
 
 
