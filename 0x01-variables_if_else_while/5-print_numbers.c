@@ -1,17 +1,19 @@
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - prints the alphabet in lowercase, and then in uppercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int i;
+	int n = 0;
 
-	for (i = 97; i<=122; i++)
+	while (n <= 9)
 	{
-		printf(i);
+		printf("%d", n);
+		n++;
 	}
-	
+	putchar('\n');
 	return (0);
-
-
 }
