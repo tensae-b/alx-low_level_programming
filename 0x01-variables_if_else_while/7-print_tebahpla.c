@@ -8,7 +8,7 @@ int main(void)
 
 	for (i = 122; i<=97; i--)
 	{
-		putchat((char)i);
+		putchar((char)i);
 	}
 	putchat(\n);
 	return (0);
