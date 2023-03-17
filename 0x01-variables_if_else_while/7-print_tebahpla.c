@@ -1,16 +1,20 @@
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main- Entry point
+ *
+ * description print lowercase alphabet
+ *
+ * Return: Always value 0 if success
+ */
 int main(void)
 {
-	int i;
+	char c;
 
-	for (i = 122; i<=97; i--)
+	for (c = 'z'; c >= 'a'; --c)
 	{
-		putchar((char)i);
+		putchar(c);
 	}
+	putchar('\n');
 	return (0);
-
-
 }
