@@ -1,27 +1,33 @@
 #include <stdio.h>
 
 /**
- * main- Entry point
+ * main - Entry point
  *
- * description print lowercase alphabet
+ * Description print alphabet in upper and lower case
  *
- * Return: Always value 0 if success
+ * Return : Always 0 if success
+ *
+ * return value of 'main' always 0 (Success)
+ * main - prints the alphabet in lowercase, and then in uppercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char c;
+	int c;
 	int i;
 
-	for (i = 97; i <= 123; i++)
+	for (i = 97; i <= 122; i++)
 	{
-		if (i == 123)
+		putchar((char)i);
+		if (i == 122)
 		{
-			putchar('\n');
-			break;
+			for (c = 65; c <= 90; c++)
+			{
+				putchar((char)c);
+			}
 		}
-		c = (char)i;
-		putchar(c);
 	}
+	putchar('\n');
 	return (0);
 }
-
