@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * print_alphabet - is a fuction to print alphabet
- * description prints all alphabet in lowercase
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * print_alphabet_x10 - fuction to print the alphabet
+ * 10 times
+ * return - void or 1
  */
 void print_alphabet_x10(void)
 {
-        char c;
-	int i;
-        for(i=0; i<10; i++)
+	int i = 0;
+	char c;
+
+	while (i < 10)
 	{
-        	for (c = 'a'; c <= 'z'; c++)
-        	{
-                	_putchar(c);
-        	}
-	_putchar('\n');
+		for (c = 'a'; c <= 'z'; c++)
+		{
+			_putchar(c);
+		}
+		_putchar('\n');
+		i++;
 	}
 }
-        
